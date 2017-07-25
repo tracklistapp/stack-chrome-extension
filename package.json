@@ -1,0 +1,26 @@
+{
+  "name": "Stack",
+  "version": "1.0.0",
+  "description": "Stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test/",
+    "background:build": "watchify ./src/background.js -d -o ./dist/background.js -v",
+    "main:build": "watchify ./src/main.js -d -o ./dist/main.js -v",
+    "popup:build": "bankai build ./src/popup/index.js ./dist/popup --html=false --w"
+  },
+  "author": "Augustin Godiscal <hello@auggod.tech>",
+  "license": "MIT",
+  "dependencies": {
+    "choo": "^6.0.0-3",
+    "lodash": "^4.17.4",
+    "rsvp": "^3.1.0",
+    "sheetify": "^6.1.0"
+  },
+  "devDependencies": {
+    "bankai": "^8.1.1",
+    "browserify": "^14.4.0",
+    "sinon-chrome": "^1.1.2",
+    "watchify": "^3.9.0"
+  }
+}
