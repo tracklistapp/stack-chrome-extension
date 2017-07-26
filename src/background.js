@@ -51,7 +51,7 @@ chrome.contextMenus.onClicked.addListener(function (tab) {
   })
 })
 
-const showForPages = ['http://*/*', 'https://*/*']
+const showForPages = ['https://soundcloud.com/*']
 
 /*
 

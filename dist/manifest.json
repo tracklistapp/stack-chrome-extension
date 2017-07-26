@@ -2,33 +2,32 @@
   "manifest_version": 2,
   "name": "Stack",
   "background": {
-    "scripts": ["dist/background.js"],
+    "scripts": ["background.js"],
     "persistent": false
   },
-  "homepage_url": "https://tracklistapp.com",
+  "homepage_url": "https://www.tracklistapp.com",
   "description": "This extension automatically detect tracks within a web page",
   "version": "1.0",
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "https://soundcloud.com/*"
       ],
-      "js": ["dist/main.js"],
+      "js": ["bundle.js"],
+      "css": ["bundle.css"],
       "run_at": "document_idle",
       "all_frames": true
     }
   ],
   "web_accessible_resources": [
-    "dist/popup/*",
+    "popup/*",
     "test/*"
   ],
   "externally_connectable": {
-    "matches": ["http://localhost:8084/*"]
+    "matches": ["https://tracklist.dev/*", "https://*.tracklistapp.com/*"]
   },
   "permissions": [
-    "http://*/*",
-    "https://*/*",
+    "https://soundcloud.com/*",
     "background",
     "webNavigation",
     "unlimitedStorage",
@@ -38,15 +37,15 @@
   ],
   "browser_action": {
     "default_icon": {
-      "19": "images/icon19.png",
-      "38": "images/icon38.png"
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
     },
     "default_title": "Stack",
-    "default_popup": "dist/popup/popup.html"
+    "default_popup": "popup/popup.html"
   },
   "icons": {
-    "16": "images/icon-bitty.png",
-    "48": "images/icon-small.png",
-    "128": "images/icon-large.png"
+    "16": "images/icon-16.png",
+    "48": "images/icon-16.png",
+    "128": "images/icon-128.png"
   }
 }

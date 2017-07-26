@@ -1,0 +1,37 @@
+/*
+ * svg icons style
+ */
+
+.icon {
+  display: inline-block;
+  fill: #fff;
+}
+
+.icon-mini {
+  width: 9px;
+  height: 9px;
+}
+
+.icon-small {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-medium {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-large {
+  width: 36px;
+  height: 36px;
+}
+
+.icon-ultra {
+  width: 72px;
+  height: 72px;
+}
+
+.icon-stack {
+  fill: #5FEB8E;
+}
