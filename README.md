@@ -12,6 +12,10 @@ This is a chrome extension
     - Could also just allow user to paste tracklist into a form too
   - From a web app, allow user to listen to tracks stored within chrome extension
 
+## Stack (within soundcloud)
+
+![Choo within soundcloud screenshot](examples/choo.png)
+
 # License
 
 MIT
